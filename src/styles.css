@@ -1,0 +1,179 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+
+@import "~bootstrap/dist/css/bootstrap.css";
+
+
+/*#region common style*/
+a {
+    text-decoration: none;
+    outline: none;
+    color: #024d98;
+}
+
+ a:hover {
+   text-decoration: none;
+   outline: none;
+ }
+
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+ul li {
+    list-style: none !important;
+}
+
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, input, button, .login-inner h1, .md-chips, .sendPass, textarea {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+
+/*Top Navbar*/
+.navbar {
+    padding: 0;
+}
+
+.navbar h4.drakebell {
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: capitalize;
+    margin: 0 12px;
+}
+
+.navbar .container-fluid.top-bar {
+    height: 80px;
+    width: 100%;
+    position: relative;
+    background: #024d98;
+    z-index: 100;
+    color: #fff;
+}
+
+.top-bar .sen-logo h1 {
+    font-size: 28px;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#header md-menu-bar .md-button.md-raised:not([disabled]) {
+    color: #FFF;
+    background: transparent;
+    font-size: 14px;
+    box-shadow: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+    height: 52px;
+}
+
+md-menu-bar .md-button.md-raised:not([disabled]):hover {
+    color: #FFF;
+    background: transparent;
+}
+
+md-menu-bar .md-button i {
+    margin-right: 7px;
+}
+
+#menu_container_0.md-open-menu-container.md-active {
+    top: 80px !important;
+    border-radius: 0;
+    text-align:left;
+}
+
+/*Header*/
+#header {
+    margin-bottom: 15px;
+    background-color: #fff;
+}
+
+#header .md-nav-bar {
+    border: 0;
+    box-shadow: 0 3px 5px -1px rgba(114,114,114,.2), 0 6px 10px 0 rgba(114,114,114,.14), 0 1px 28px 0 rgba(114,114,114,.12);
+    height: 60px;
+}
+
+#header .md-nav-bar .md-button {
+    font-size: 15px;
+    color: #4d4d4d;
+    line-height: 46px;
+    text-transform: capitalize;
+    padding: 8px 20px;
+}
+
+#header .md-nav-bar .md-button.md-active {
+    color: #024d98;
+    font-weight: 600;
+}
+
+#header md-nav-ink-bar {
+    display: none;
+}
+
+/*container*/
+.container-fluid {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+md-content.md-default-theme, md-content {
+    background-color: transparent;
+}
+
+h2 {
+    font-size: 24px;
+    color: #024d98;
+    margin-top: 10px;
+}
+
+/*Footer*/
+
+
+#footer {
+    background-color: #333333;
+    color: #fff;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 17px;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+ html, body {
+    width: 100%;
+    height: 100%;
+    
+}
+
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+#footer p {
+    margin-bottom: 0;
+}
+
