@@ -8,8 +8,12 @@
         [pageable]="true"
         [filterable]="true"
         (dataStateChange)="dataStateChange($event)"
+        [selectable]="{enabled: true, checkboxOnly: true }"
+        [kendoGridSelectBy]="'ProductID'"
+        [selectedKeys]="mySelection"
     >
-    <kendo-grid-column field="ProductID" title="ID" width="40" [filterable]="false">
+    <kendo-grid-checkbox-column width="40" showSelectAll="true"></kendo-grid-checkbox-column>
+    <kendo-grid-column field="ProductID" title="ID" width="60" [filterable]="false">
     </kendo-grid-column>
     <kendo-grid-column field="ProductName" title="Product Name">
     </kendo-grid-column>
@@ -19,7 +23,7 @@
     </kendo-grid-column>
     <kendo-grid-column field="Discontinued" width="120" filter="boolean">
         <ng-template kendoGridCellTemplate let-dataItem>
-            <input type="checkbox" [checked]="dataItem.Discontinued" disabled/>
+            <input type="checkbox" [checked]="dataItem.Discontinued"/>
         </ng-template>
     </kendo-grid-column>
     </kendo-grid>

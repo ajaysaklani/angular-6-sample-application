@@ -5,7 +5,8 @@ import { sampleProducts } from '../../products';
 import {
     GridComponent,
     GridDataResult,
-    DataStateChangeEvent
+    DataStateChangeEvent,
+    SelectableSettings
 } from '@progress/kendo-angular-grid';
 
 @Component({
@@ -14,6 +15,8 @@ import {
   styleUrls: ['./receipt-list.component.css']
 })
 export class ReceiptListComponent implements OnInit {
+
+    public mySelection: number[] = [2, 4];
 
     constructor(){
         //called first time before the ngOnInit()
@@ -25,12 +28,12 @@ export class ReceiptListComponent implements OnInit {
     
     public state: State = {
         skip: 0,
-        take: 5,
+        take: 10,
 
         // Initial filter descriptor
         filter: {
           logic: 'and',
-          filters: [{ field: 'ProductName', operator: 'contains', value: 'Chef' }]
+          filters: [{ field: 'ProductName', operator: 'contains', value: '' }]
         }
     };
 
@@ -41,4 +44,15 @@ export class ReceiptListComponent implements OnInit {
         this.gridData = process(sampleProducts, this.state);
     }
 
+    public onSelectedKeysChange(e) {
+        const len = this.mySelection.length;
+
+        if (len === 0) {
+            this.selectAllState = 'unchecked';
+        } else if (len > 0 && len < this.items.length) {
+            this.selectAllState = 'indeterminate';
+        } else {
+            this.selectAllState = 'checked';
+        }
+    }
 }
