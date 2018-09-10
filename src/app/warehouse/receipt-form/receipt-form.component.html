@@ -1,3 +1,85 @@
-<p>
-  receipt-form works!
-</p>
+<div class="main_wrapper">
+
+  <!--Warehouse Receipt List--->
+  <div class="row">
+    <div class="col-12">
+      <h2>Shipment</h2>
+
+      <div class="WarehouseReceiptTab">
+        <ul class="nav nav-pills mb-3" id="WarehouseReceiptTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="General-tab" role="tab" data-toggle="tab" aria-selected="true" href="#General">General</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="Consolidation-tab" href="#Consolidation" data-toggle="tab" role="tab" aria-selected="true">Consolidation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="PackageDetails-tab" href="PackageDetails" data-toggle="tab" role="tab"
+              aria-selected="true">Package Details</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="separator marginBottom40"></div>
+
+  <div class="tab-content organTab" id="CreateShipmentFormTabContent">
+    <div class="tab-pane fade show active" id="General" role="tabpanel" aria-labelledby="General-tab">
+      <form name="CreateShipmentForm" novalidate="">
+        <!-- Basic Details	-->
+        <div class="row">
+          <div class="col-12">
+            <div class="white-box">
+              <h2 class="headquarter-text">Basic Details</h2>
+
+              <div class="row">
+                <div class="col-4 example-container">
+                  <mat-form-field>
+                    <input type="text" matInput placeholder="Shipment ID" name="ShipmentID" required>
+                  </mat-form-field>
+                </div>
+                <div class="col-4 example-container">
+                  <mat-form-field>
+                    <input matInput type="text" placeholder="Created By" name="CreatedBy">
+                  </mat-form-field>
+                </div>
+                <div class="col-4 example-container">
+                  <mat-form-field>
+                    <input type="text" matInput placeholder="Created Date & Time" name="CreatedDateTime">
+                  </mat-form-field>
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="col-4 example-container">
+                  <mat-form-field>
+                    <input type="text" matInput placeholder="Created Date & Time" name="CreatedDateTime">
+                  </mat-form-field>
+                </div>
+                <div class="col-4 example-container">
+                  <mat-form-field>
+                    <mat-select placeholder="Select">
+                      <mat-option value="option">Option</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- Basic Details Ends-->
+      </form>
+    </div>
+
+    <div class="tab-pane fade" id="Consolidation" role="tabpanel" aria-labelledby="Consolidation-tab"></div>
+
+    <div class="tab-pane fade" id="PackageDetails" role="tabpanel" aria-labelledby="PackageDetails-tab"></div>
+
+
+  </div>
+
+</div>

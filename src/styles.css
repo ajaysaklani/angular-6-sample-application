@@ -177,3 +177,65 @@ body {
     margin-bottom: 0;
 }
 
+/*container*/
+.container-fluid {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width:1320px; 
+    margin:0 auto;
+}
+
+.WarehouseReceiptTab .nav {
+    margin-top: 20px;
+    margin-bottom:0!important;
+} 
+
+.WarehouseReceiptTab .nav-item a {
+    font-size: 16px;
+    color: #4d4d4d;
+    padding: 4px 16px;
+    border-radius: 20px; 
+    font-weight:300;
+}
+
+.WarehouseReceiptTab .nav-pills .nav-link.active, .WarehouseReceiptTab .nav-pills .show > .nav-link {
+    background-color: #024d98;
+}
+
+.white-box {
+    background-color: #fff;
+    padding: 15px 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px -1px rgba(114,114,114,.2), 0 6px 10px 0 rgba(114,114,114,.14), 0 1px 28px 0 rgba(114,114,114,.12);
+}
+
+.white-box h2.headquarter-text {
+    font-weight: 500;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size:20px;
+}
+
+.white-box h2.headquarter-text:after {
+    content: "";
+    position: absolute;
+    top: -15px;
+    border-top: 1px solid #2364a5;
+    width: 74px;
+    left: 0;
+}
+
+.tab-content {
+    margin-top: 25px;
+}
+
+.example-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .example-container > * {
+    width: 100%;
+  }

@@ -17,7 +17,6 @@ import {
 export class ReceiptListComponent implements OnInit {
 
     public mySelection: number[] = [2, 4];
-
     constructor(){
         //called first time before the ngOnInit()
      }
@@ -47,12 +46,5 @@ export class ReceiptListComponent implements OnInit {
     public onSelectedKeysChange(e) {
         const len = this.mySelection.length;
 
-        if (len === 0) {
-            this.selectAllState = 'unchecked';
-        } else if (len > 0 && len < this.items.length) {
-            this.selectAllState = 'indeterminate';
-        } else {
-            this.selectAllState = 'checked';
-        }
     }
 }
