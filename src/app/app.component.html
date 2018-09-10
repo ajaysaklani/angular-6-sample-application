@@ -1,5 +1,5 @@
 <div class="nav-md" id="CommonController">
-    <header id="header" class="container-fluid">
+    <header id="header">
         <!-- Top bar notification & user profile -->
         <div class="navbar navbar-fixed-top scroll-hide">
             <div class="container-fluid top-bar">
@@ -19,68 +19,69 @@
         <div class="md-nav-bar">
 
 
-            <nav role="navigation">
-
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link" routerLink="/" routerLinkActive="active">
-                            Warehouse
-                            <!-- <md-menu>
-                                <span ng-mouseenter="$mdMenu.open()">Warehouse</span>
-                                <md-menu-content width="3" ng-mouseleave="$mdMenu.close()">
-                                    <md-menu-item auth-has-any-role="ReadOnlyReceipt,ModifyOnlyReceipt,FullAccessReceipt">
-                                        <md-button ui-sref="layout.receiptlist" md-nav-active="active">
-                                            Receipt List
-                                        </md-button>
-                                    </md-menu-item>
-                                    <md-menu-item auth-has-any-role="ReadOnlyPackage,ModifyOnlyPackage,FullAccessPackage">
-                                        <md-button ui-sref="layout.packagelist" md-nav-active="active">
-                                            Package List
-                                        </md-button>
-                                    </md-menu-item>
-                                </md-menu-content>
-                            </md-menu> -->
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" routerLink="/shipment">Shipment</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" routerLink="/asn">ASN</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"  routerLink="/task">Task</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link"  routerLink="/userslist">
-                            Account
-                            <!-- <md-menu>
-                                <span ng-mouseenter="$mdMenu.open()">Account</span>
-                                <md-menu-content width="3" ng-mouseleave="$mdMenu.close()">
-                                    <md-menu-item auth-has-any-role="ReadOnlyUser,ModifyOnlyUser,FullAccessUser">
-                                        <md-button ui-sref="layout.userslist" md-nav-active="active">
-                                            Users List
-                                        </md-button>
-                                    </md-menu-item>
-                                    <md-menu-item auth-has-any-role="ModifyOnlySecurity,FullAccessSecurity">
-                                        <md-button ui-sref="layout.securitylist" md-nav-active="active">
-                                            Security Level
-                                        </md-button>
-                                    </md-menu-item>
-                                </md-menu-content>
-                            </md-menu> -->
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" ui-sref="layout.reports">Report</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" ui-sref="layout.systemlogs" ui-sref-active="md-active">System Logs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" ui-sref="layout.vendors" ui-sref-active="md-active">Vendors & Customers</a>
-                    </li>
-                </ul>
+            <nav role="navigation ">
+                <div class="container-fluid">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/" routerLinkActive="active">
+                                Warehouse
+                                <!-- <md-menu>
+                                    <span ng-mouseenter="$mdMenu.open()">Warehouse</span>
+                                    <md-menu-content width="3" ng-mouseleave="$mdMenu.close()">
+                                        <md-menu-item auth-has-any-role="ReadOnlyReceipt,ModifyOnlyReceipt,FullAccessReceipt">
+                                            <md-button ui-sref="layout.receiptlist" md-nav-active="active">
+                                                Receipt List
+                                            </md-button>
+                                        </md-menu-item>
+                                        <md-menu-item auth-has-any-role="ReadOnlyPackage,ModifyOnlyPackage,FullAccessPackage">
+                                            <md-button ui-sref="layout.packagelist" md-nav-active="active">
+                                                Package List
+                                            </md-button>
+                                        </md-menu-item>
+                                    </md-menu-content>
+                                </md-menu> -->
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/shipment">Shipment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLink="/asn">ASN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  routerLink="/task">Task</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"  routerLink="/userslist">
+                                Account
+                                <!-- <md-menu>
+                                    <span ng-mouseenter="$mdMenu.open()">Account</span>
+                                    <md-menu-content width="3" ng-mouseleave="$mdMenu.close()">
+                                        <md-menu-item auth-has-any-role="ReadOnlyUser,ModifyOnlyUser,FullAccessUser">
+                                            <md-button ui-sref="layout.userslist" md-nav-active="active">
+                                                Users List
+                                            </md-button>
+                                        </md-menu-item>
+                                        <md-menu-item auth-has-any-role="ModifyOnlySecurity,FullAccessSecurity">
+                                            <md-button ui-sref="layout.securitylist" md-nav-active="active">
+                                                Security Level
+                                            </md-button>
+                                        </md-menu-item>
+                                    </md-menu-content>
+                                </md-menu> -->
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" ui-sref="layout.reports">Report</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" ui-sref="layout.systemlogs" ui-sref-active="md-active">System Logs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" ui-sref="layout.vendors" ui-sref-active="md-active">Vendors & Customers</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>

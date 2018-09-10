@@ -239,3 +239,110 @@ body {
   .example-container > * {
     width: 100%;
   }
+
+  .navbar-fixed-top {
+    background: #024d98;
+}
+
+#header .md-nav-bar a {
+    font-size: 16px;
+    color: #4d4d4d;
+    line-height: 46px;
+    text-transform: capitalize;
+    padding: 9px 28px 3px 0;
+}
+#header .md-nav-bar a.active {
+    color: #024d98;
+    font-weight: 500;
+}
+
+a.btn {
+    background-color: #024d98 !important;
+    font-size: 13px;
+    color: #fff;
+    max-width: 100px;
+    height: 36px;
+    border-radius: 6px;
+    width: 100%;
+    padding: 0 10px;
+    box-shadow: none !important;
+    margin-top: 0;
+    border: 0;
+    text-transform: capitalize;
+    color: #fff !important;
+    line-height: 36px;
+    position: relative;
+    z-index: 10;
+    min-height: 36px;
+}
+
+.separator {
+    border-bottom: 1px solid #d3d3d3;
+    width: 100%;
+    clear: left;
+    margin: 20px 0 0;
+}
+
+.marginBottom40{
+    margin-bottom:40px;
+}
+
+/*saveCancelButton*/
+
+.buttons-bottom {
+    height: 70px;
+    width: 100%;
+    border-top: 1px solid #024d98;
+    border-bottom: 1px solid #024d98;
+    background-color: #024d98;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 12;
+    text-align: right;
+    padding-top: 9px;
+}
+
+.buttons-bottom .border-btn {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0px 20px;
+    background-color: #024d98;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    height: 40px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.buttons-bottom .btn-create {
+    font-size: 14px;
+    color: #024d98;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0px 20px;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    height: 40px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.buttons-bottom {
+    padding-right: 70px;
+}
+
+.buttons-bottom .border-btn:hover {
+    background-color: #fff;
+    color: #024d98;
+}
+
+.buttons-bottom button.btn-create:hover {
+    color: #fff;
+    border: 2px solid #fff;
+    background-color: #024d98;
+}
+

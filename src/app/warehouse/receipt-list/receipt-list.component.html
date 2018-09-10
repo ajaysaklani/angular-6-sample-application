@@ -1,29 +1,39 @@
-<kendo-grid
-        [data]="gridData"
-        [pageSize]="state.take"
-        [skip]="state.skip"
-        [sort]="state.sort"
-        [filter]="state.filter"
-        [sortable]="true"
-        [pageable]="true"
-        [filterable]="true"
-        (dataStateChange)="dataStateChange($event)"
-        [selectable]="{enabled: true, checkboxOnly: true }"
-        [kendoGridSelectBy]="'ProductID'"
-        [selectedKeys]="mySelection"
-    >
-    <kendo-grid-checkbox-column width="40" showSelectAll="true"></kendo-grid-checkbox-column>
-    <kendo-grid-column field="ProductID" title="ID" width="60" [filterable]="false">
-    </kendo-grid-column>
-    <kendo-grid-column field="ProductName" title="Product Name">
-    </kendo-grid-column>
-    <kendo-grid-column field="FirstOrderedOn" title="First Ordered On" width="240" filter="date" format="{0:d}">
-    </kendo-grid-column>
-    <kendo-grid-column field="UnitPrice" title="Unit Price" width="180" filter="numeric" format="{0:c}">
-    </kendo-grid-column>
-    <kendo-grid-column field="Discontinued" width="120" filter="boolean">
-        <ng-template kendoGridCellTemplate let-dataItem>
-            <input type="checkbox" [checked]="dataItem.Discontinued"/>
-        </ng-template>
-    </kendo-grid-column>
-    </kendo-grid>
+<div class="main_wrapper">
+
+    <!--Warehouse Receipt List--->
+    <div class="row">
+        <div class="col-8">
+            <h2>Shipment</h2>
+        </div>
+        <div class="col-4">
+            <a class="btn float-right" routerLink="/receipt" routerLinkActive="active">
+                Add new
+            </a>
+        </div>
+    </div>
+    <div class="separator marginBottom40"></div>
+
+    <!-- Basic Details	-->
+    <div class="row">
+        <div class="col-12">
+            <kendo-grid [data]="gridData" [pageSize]="state.take" [skip]="state.skip" [sort]="state.sort" [filter]="state.filter"
+                [sortable]="true" [pageable]="true" [filterable]="true" (dataStateChange)="dataStateChange($event)"
+                [selectable]="{enabled: true, checkboxOnly: true }" [kendoGridSelectBy]="'ProductID'" [selectedKeys]="mySelection">
+                <kendo-grid-checkbox-column width="40" showSelectAll="true"></kendo-grid-checkbox-column>
+                <kendo-grid-column field="ProductID" title="ID" width="60" [filterable]="false">
+                </kendo-grid-column>
+                <kendo-grid-column field="ProductName" title="Product Name">
+                </kendo-grid-column>
+                <kendo-grid-column field="FirstOrderedOn" title="First Ordered On" width="240" filter="date" format="{0:d}">
+                </kendo-grid-column>
+                <kendo-grid-column field="UnitPrice" title="Unit Price" width="180" filter="numeric" format="{0:c}">
+                </kendo-grid-column>
+                <kendo-grid-column field="Discontinued" width="120" filter="boolean">
+                    <ng-template kendoGridCellTemplate let-dataItem>
+                        <input type="checkbox" [checked]="dataItem.Discontinued" />
+                    </ng-template>
+                </kendo-grid-column>
+            </kendo-grid>
+        </div>
+    </div>
+</div>
